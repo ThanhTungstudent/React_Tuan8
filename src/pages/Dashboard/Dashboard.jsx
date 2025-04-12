@@ -3,6 +3,8 @@ import Sidebar from '../../components/Sidebar/Sidebar'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Overview from '../../components/Overview/Overview'
+import CustomDataTable from '../../components/DataTable/CustomDataTable'
+
 
 function Dashboard() {
   return (
@@ -13,9 +15,7 @@ function Dashboard() {
         <div className='col-span-3'>
             <Header/>
             <Overview/>
-            <div>
-                main
-            </div>
+            <CustomDataTable />
         </div>
       
     </div>

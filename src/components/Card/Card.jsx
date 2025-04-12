@@ -12,14 +12,14 @@ function Card({ overview }) {
   };
   return (
     <div
-      className={`w-[300px] border h-[180px] p-5 rounded-[5px] 
+      className={`w-[300px] h-[130px] p-5 rounded-[5px] 
     bg-${overview?.bgColor}`}
     >
       <div className="flex flex-row justify-between">
         <p>{overview?.title}</p>
         <button
           className={`p-2 border rounded-md ${
-            overview.icon === "shopping_cart"
+            overview?.icon === "shopping_cart"
               ? "border-pink-600"
               : "border-blue-600"
           }`}
@@ -27,9 +27,9 @@ function Card({ overview }) {
           {iconMap[overview?.icon]}
         </button>
       </div>
-      <div className="mt-5">
+      <div className="">
         <p className="text-2xl text-black font-bold">{overview?.value}</p>
-        <div className="mt-5">
+        <div className="mt-2">
           {overview?.change_type === "increase" ? (
             <div>
               <span className="text-green-600">▲ </span>
